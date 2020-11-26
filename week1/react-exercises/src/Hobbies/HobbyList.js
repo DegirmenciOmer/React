@@ -1,12 +1,5 @@
 import React from "react";
-
-const Hobbies = ({ hobby }) => {
-  return (
-    <>
-      <li>{hobby}</li>
-    </>
-  );
-};
+import HobbyItem from "./HobbyItem";
 
 const HobbyList = () => {
   const hobbies = [
@@ -19,7 +12,7 @@ const HobbyList = () => {
     <div>
       <ol>
         {hobbies.map((hobby, index) => (
-          <Hobbies hobby={hobby} key={index} />
+          <HobbyItem hobby={hobby} key={index} />
         ))}
       </ol>
     </div>

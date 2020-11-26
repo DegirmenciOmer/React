@@ -1,12 +1,12 @@
 import "./App.css";
-import Hobbies from "./Hobbies.js";
-import Guarantee from "./Guarantee.js";
+import HobbyList from "./Hobbies/HobbyList.js";
+import Guarantee from "./Guarantee/Guarantee.js";
 import Counter from "./Counter.js";
 
 function App() {
   return (
     <>
-      <Hobbies />
+      <HobbyList />
       <Guarantee />
       <Counter />
     </>

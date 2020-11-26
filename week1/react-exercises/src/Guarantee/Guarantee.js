@@ -1,9 +1,8 @@
 import React from "react";
+import GuaranteeItem from "./GuaranteeItem";
 import payback from "./files/payback.PNG";
 import shipping from "./files/shipping.PNG";
 import support from "./files/online-support.PNG";
-
-//import Services from "./Services.js";
 
 const Services = [
   {
@@ -26,25 +25,20 @@ const Services = [
   },
 ];
 
-function GuaranteeItem({ img, title, desc }) {
-  return (
-    <div className="services-items">
-      <img src={img} alt="service-imgs" />
-      <h3>{title}</h3>
-      <p>{desc}</p>
-    </div>
-  );
-}
 const Guarantee = () => {
+  const [{ img, title, description }] = Services;
   return (
     <div className="services-container">
-      {Services.map((service) => (
-        <GuaranteeItem
-          img={service.img}
-          title={service.title}
-          desc={service.description}
-        />
-      ))}
+      {Services.map((index) => {
+        return (
+          <GuaranteeItem
+            key={index}
+            img={img}
+            title={title}
+            description={description}
+          />
+        );
+      })}
     </div>
   );
 };
