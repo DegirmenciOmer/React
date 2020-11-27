@@ -1,16 +1,22 @@
 import React from "react";
 
 export default function FriendProfile({ friend }) {
+  const {
+    name: { title, first, last },
+    email,
+    phone,
+    location: { city, country },
+  } = friend;
   return (
     <ul>
       <li>
-        Name : {friend.name.title} {friend.name.first} {friend.name.last}
+        Name : {title} {first} {last}
       </li>
       <li>
-        Address: {friend.location.city}, {friend.location.country}
+        Address: {city}, {country}
       </li>
-      <li>Email : {friend.email}</li>
-      <li>Tel : {friend.phone}</li>
+      <li>Email : {email}</li>
+      <li>Tel : {phone}</li>
     </ul>
   );
 }

@@ -1,0 +1,59 @@
+
+li {
+  list-style: none;
+}
+
+input{
+  width: 100%;
+}
+.hdr {
+  display: flex;
+  justify-content: center;
+}
+.root, form, .src-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,0.6474789744999563) 0%, rgba(72,133,116,0.7707283597032564) 100%); }
+.city-item {
+  border: 1px solid;
+  margin-top: 5px;
+  padding: 7px;
+  min-width: 30%;
+  max-width: 40%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
